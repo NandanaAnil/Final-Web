@@ -1,0 +1,43 @@
+<html>
+<body>
+<h2>JavaScript Strings</h2>
+<p id="name"></p>
+<p id="length"></p>
+<p id="char"></p>
+<p id="concat"></p>
+<p id="index"></p>
+<p id="search"></p>
+<p id="matching"></p>
+<p id="rep"></p>
+<p id="sli"></p>
+<p id="case"></p>
+<font color="red">3 to the power of 4 is:</font>
+<p id="math1"></p>
+<font color="green">Maximum value is:</font>
+<p id="math2"></p>
+<font color="blue">Square root:</font>
+<p id="math3"></p>
+<script>
+var x = "Nandana Anil.";  
+document.getElementById("name").innerHTML = x;
+var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var sln = txt.length;
+document.getElementById("length").innerHTML = sln;
+var str = 'javascript string functions';
+document.getElementById("char").innerHTML =str.charAt(8);
+document.getElementById("concat").innerHTML =x.concat(str); 
+document.getElementById("index").innerHTML =x.indexOf('d'); 
+document.getElementById("search").innerHTML =str.search("functions");
+var st="Javatpoint";
+document.getElementById("rep").innerHTML =st.replace("tpoint","Script");
+document.getElementById("matching").innerHTML =st.match("Java");
+document.getElementById("sli").innerHTML =st.slice(5,9);
+document.getElementById("case").innerHTML =txt.toLowerCase();    
+document.getElementById('math1').innerHTML=Math.pow(3,4);  
+document.getElementById('math2').innerHTML=Math.max(22,34,12,15); 
+document.getElementById('math3').innerHTML=Math.sqrt(64);  
+</script>    
+
+</script>
+</body>
+</html>

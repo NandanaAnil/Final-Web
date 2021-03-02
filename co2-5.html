@@ -1,0 +1,31 @@
+<html> 
+<head> 
+<script language="javascript"> 
+function preload() 
+{ 
+topon=new Image(100,50); 
+topon.src="http://tkmce.ac.in/wp-content/themes/tkm/images/tkmce_logo.png"; 
+topoff=new Image(260,280); 
+topoff.src="http://tkmce.ac.in/wp-content/uploads/2014/09/founder.png"; 
+} 
+function myMouseOn(n) 
+{ 
+preload(); 
+imageON=eval(n+"on.src"); 
+document.images[n].src=imageON; 
+} 
+function myMouseOff(n) 
+{ 
+imageOFF=eval(n+"off.src"); 
+document.images[n].src=imageOFF; 
+} 
+</script> 
+</head> 
+<body > 
+<h1> Demo for mouse over</h1> 
+<a href="#" onMouseOut="myMouseOff('top')"; onMouseOver="myMouseOn('top')";> 
+<img src="Koala.jpg" alt="Show Next" name="top"> 
+</a> 
+</body> 
+</html>
+

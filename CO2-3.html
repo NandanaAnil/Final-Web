@@ -1,0 +1,83 @@
+<html>
+<head>
+<title>Name and Age 
+</title>
+<script text="JavaScript">
+function checkData()
+{
+var T_name,T_age,N_age,addr,phno,email,pwd;
+T_name=(document.formvalid.txtName.value);
+if(T_name=="")
+{
+alert("Please Enter a Valid Name!!!!!!!!!!!!!!");
+return;
+}
+T_age=(document.formvalid.txtAge.value);
+if(T_age=="")
+{
+alert("Please Enter Age!!!");
+return;
+}
+if(isNaN(T_age))
+{
+alert("Please Enter a number as the Age!!!");
+return;
+}
+N_age=Number(T_age);
+if(N_age<15 ||N_age>20)
+{
+alert("The age must be between 15 and 20!!!");
+return;
+}
+addr=(document.formvalid.txtArea.value);
+if(addr=="")
+{
+alert("Please Enter a Valid address!!!!!!!!!!!!!!");
+return;
+}
+phno=(document.formvalid.txtPhone.value);
+if(phno=="")
+{
+alert("Please Enter a Phone Number!!!!!!!!!!!!!!");
+return;
+}
+if(phno.length<10)
+{
+alert("Phone no must contain 10 digits!!!!!!!!!!!!!!");
+return;
+}
+email=(document.formvalid.txtEmail.value);
+if(email=="")
+{
+alert("Please Enter an email id!!!!!!!!!!!!!!");
+return;
+}
+pwd=(document.formvalid.txtPwd.value);
+if(pwd=="")
+{
+alert("Please Enter a password!!!!!!!!!!!!!!");
+return;
+}
+}
+
+</script>
+</head>
+<body>
+<form name="formvalid">
+<h1>REGISTRATION FORM</h1><br><br>
+<font size="6">Name:
+<input type="text" name="txtName"><br><br>
+Age:
+<input type="text" name="txtAge"><br><br>
+Address:
+<input type="text" name="txtArea"><br><br>
+Phone No:
+<input type="text" name="txtPhone"><br><br>
+Email Id:
+<input type="text" name="txtEmail"><br><br>
+Password:
+<input type="password" name="txtPwd"><br><br>
+<input type="button" value="ENTER" onClick="checkData()"><br>
+</form>
+</body>
+</html>
