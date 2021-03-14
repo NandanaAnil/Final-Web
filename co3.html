@@ -1,0 +1,68 @@
+<html>
+<head>
+<title>
+SAMPLE program
+</title>
+<script text="JavaScript">
+    function checkData()
+    {
+    var T_name,T_age,T_mark,phno,email;
+    T_name=(document.f1.t2.value);
+    if(T_name=="")
+    {
+    alert("Please Enter a Valid Name!!!!!!!!!!!!!!");
+    return;
+    }
+    T_mark=(document.f1.t3.value);
+    if(T_mark=="")
+    {
+    alert("Please Enter a Valid Name!!!!!!!!!!!!!!");
+    return;
+    }
+    T_age=(document.formvalid.t4.value);
+    if(T_age=="")
+    {
+    alert("Please Enter Age!!!");
+    return;
+    }
+    if(isNaN(T_age))
+    {
+    alert("Please Enter a number as the Age!!!");
+    return;
+    }
+    phno=(document.formvalid.t5.value);
+    if(phno=="")
+    {
+    alert("Please Enter a Phone Number!!!!!!!!!!!!!!");
+    return;
+    }
+    if(phno.length<10)
+    {
+    alert("Phone no must contain 10 digits!!!!!!!!!!!!!!");
+    return;
+    }
+    email=(document.formvalid.t6.value);
+    if(email=="")
+    {
+    alert("Please Enter an email id!!!!!!!!!!!!!!");
+    return;
+    }
+    }
+    
+    </script>
+    </head>
+</head>
+<body>
+<form name="f1" method="get" action="demo.php" onsubmit="return checkData();">
+<h1>REGISTRATION FORM</h1>
+<table><tr><td>REGISTER NO:</td><td><input type="text" name="t1"></td></tr><br>
+    <tr><td>NAME:</td><td><input type="text" name="t2"></td></tr>
+        <tr><td>MARK:</td><td><input type="text" name="t3"></td></tr>
+            <tr><td>AGE:</td><td><input type="text" name="t4"></td></tr>
+                <tr><td>PHONE NO:</td><td><input type="text" name="t5"></td></tr>
+                    <tr><td>EMAIL:</td><td><input type="text" name="t6"></td></tr>
+                <tr><td><input type="submit" value="SUBMIT"></td></tr>
+</table>
+</form>
+</body>
+</html>
